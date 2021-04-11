@@ -1,212 +1,639 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- <link rel="stylesheet" href="./fonts/fonts.css"> -->
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="./libs/slick/slick.css" />
+		<title>Document</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./fonts/fonts.css"> -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="./libs/slick/slick.css">
-    <title>Document</title>
-</head>
+	<body>
+        <!-- 
+		<header class="header">
+			<div class="container">
+				<div class="logo">
+					<img class="logo__image" src="./img/logo.png" alt="" />
+					<h1 class="logo__text">PRODUCT 24</h1>
+				</div>
+				<nav class="nav">
+					<button class="nav__item">NavItem1</button>
+					<button class="nav__item">NavItem2</button>
+					<button class="nav__item nav__item_active">NavItem3</button>
+				</nav>
+				<button class="header__button">button</button>
+			</div>
+		</header>
 
-<body>
-    
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <img class="logo__image" src="./img/logo.png" alt="">
-                <h1 class="logo__text">PRODUCT 24</h1>
+		<main class="main">
+			<div class="contaner">
+				<div class="main__pic"></div>
+
+				<h2 class="main__title">Lorem ipsum, dolor sit amet consectetur</h2>
+				<div class="slider">
+					<div class="slider__item">
+						<svg
+							class="svg-hover"
+							width="80"
+							height="88"
+							viewBox="0 0 80 88"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g filter="url(#filter0_d)">
+								<path
+									d="M64 43.5V29C64 15.7452 53.2548 5 40 5H32C18.7452 5 8 15.7452 8 29V43.5"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<path
+									d="M13 35C13 22.2975 23.2975 12 36 12C48.7025 12 59 22.2975 59 35V43C59 55.7025 48.7025 66 36 66C23.2975 66 13 55.7025 13 43V35Z"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<path
+									d="M33.5 74.5L40 74.5C53.2548 74.5 64 63.7548 64 50.5L64 40"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<rect
+									x="5"
+									y="36"
+									width="6"
+									height="14"
+									rx="3"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<rect
+									x="61"
+									y="36"
+									width="6"
+									height="14"
+									rx="3"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+							</g>
+							<defs>
+							</defs>
+						</svg>
+						<p class="slider__item-text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+						</p>
+					</div>
+					<div class="slider__item">
+						<svg
+							class="svg-hover"
+							width="81"
+							height="96"
+							viewBox="0 0 81 96"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g filter="url(#filter0_d)">
+								<circle
+									cx="31.69"
+									cy="73.4106"
+									r="7"
+									transform="rotate(-15 31.69 73.4106)"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<rect
+									x="30.9965"
+									y="32.1853"
+									width="30"
+									height="30"
+									transform="rotate(-15 30.9965 32.1853)"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<g filter="url(#filter1_d)">
+									<rect
+										x="43.1052"
+										y="31.0114"
+										width="6"
+										height="8"
+										transform="rotate(-15 43.1052 31.0114)"
+										stroke="#00C368"
+										stroke-width="2"
+									/>
+								</g>
+							</g>
+							<defs></defs>
+						</svg>
+						<p class="slider__item-text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+						</p>
+					</div>
+					<div class="slider__item">
+						<svg
+							class="svg-hover"
+							width="113"
+							height="103"
+							viewBox="0 0 113 103"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g filter="url(#filter0_d)">
+								<path
+									d="M19.1607 65.5423C13.3029 59.6844 13.3028 50.1869 19.1607 44.3291L44.7138 18.7759C50.5717 12.9181 60.0692 12.9181 65.927 18.7759L70.3751 23.224C76.7391 29.588 76.1152 40.1228 69.2298 46.0046C65.3795 49.2937 61.381 52.849 58.1861 56.0092C54.446 59.7086 50.2117 64.4448 46.3971 68.8965C40.5133 75.7631 29.9905 76.372 23.6345 70.016L19.1607 65.5423Z"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<path
+									d="M17.1362 63.2873C11.7662 57.9174 11.2645 49.4046 16.1269 43.6212C20.5091 38.409 25.7879 32.3754 30.3021 27.9102C34.2798 23.9757 39.5538 19.3897 44.2348 15.4712C50.0198 10.6285 58.5205 11.1389 63.8823 16.5008L64.2826 16.9011C70.6467 23.2652 70.0228 33.7999 63.1374 39.6817C59.2871 42.9708 55.2886 46.5262 52.0937 49.6863C48.3536 53.3858 44.1192 58.1219 40.3046 62.5737C34.4209 69.4402 23.898 70.0492 17.542 63.6932L17.1362 63.2873Z"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<rect
+									x="38.1523"
+									y="30.7675"
+									width="15.6653"
+									height="15.6653"
+									rx="7.83265"
+									transform="rotate(-45 38.1523 30.7675)"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<rect
+									x="73.5"
+									y="67.9999"
+									width="26"
+									height="22"
+									rx="1"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<path
+									d="M75.5 44.9994C82.5 46.9994 86.5 49.9999 86.5002 60.999"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+							</g>
+							<defs>
+								<filter
+									id="filter0_d"
+									x="0.615234"
+									y="6.10352e-05"
+									width="111.885"
+									height="103"
+									filterUnits="userSpaceOnUse"
+									color-interpolation-filters="sRGB"
+								>
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feColorMatrix
+										in="SourceAlpha"
+										type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+									/>
+									<feOffset dx="4" dy="4" />
+									<feGaussianBlur stdDeviation="4" />
+									<feColorMatrix
+										type="matrix"
+										values="0 0 0 0 0.65098 0 0 0 0 0.670588 0 0 0 0 0.741176 0 0 0 1 0"
+									/>
+									<feBlend
+										mode="normal"
+										in2="BackgroundImageFix"
+										result="effect1_dropShadow"
+									/>
+									<feBlend
+										mode="normal"
+										in="SourceGraphic"
+										in2="effect1_dropShadow"
+										result="shape"
+									/>
+								</filter>
+							</defs>
+						</svg>
+						<p class="slider__item-text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+						</p>
+					</div>
+					<div class="slider__item">
+						<svg
+							class="svg-hover"
+							width="81"
+							height="96"
+							viewBox="0 0 81 96"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g filter="url(#filter0_d)">
+								<circle
+									cx="31.69"
+									cy="73.4106"
+									r="7"
+									transform="rotate(-15 31.69 73.4106)"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<rect
+									x="30.9965"
+									y="32.1853"
+									width="30"
+									height="30"
+									transform="rotate(-15 30.9965 32.1853)"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<g filter="url(#filter1_d)">
+									<rect
+										x="43.1052"
+										y="31.0114"
+										width="6"
+										height="8"
+										transform="rotate(-15 43.1052 31.0114)"
+										stroke="#00C368"
+										stroke-width="2"
+									/>
+								</g>
+							</g>
+							<defs>
+								<filter
+									id="filter0_d"
+									x="17.8921"
+									y="19.196"
+									width="63.0715"
+									height="76.0125"
+									filterUnits="userSpaceOnUse"
+									color-interpolation-filters="sRGB"
+								>
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feColorMatrix
+										in="SourceAlpha"
+										type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+									/>
+									<feOffset dx="4" dy="4" />
+									<feGaussianBlur stdDeviation="4" />
+									<feColorMatrix
+										type="matrix"
+										values="0 0 0 0 0.65098 0 0 0 0 0.670588 0 0 0 0 0.741176 0 0 0 1 0"
+									/>
+									<feBlend
+										mode="normal"
+										in2="BackgroundImageFix"
+										result="effect1_dropShadow"
+									/>
+									<feBlend
+										mode="normal"
+										in="SourceGraphic"
+										in2="effect1_dropShadow"
+										result="shape"
+									/>
+								</filter>
+								<filter
+									id="filter1_d"
+									x="39.8805"
+									y="26.2337"
+									width="18.3156"
+									height="19.7298"
+									filterUnits="userSpaceOnUse"
+									color-interpolation-filters="sRGB"
+								>
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feColorMatrix
+										in="SourceAlpha"
+										type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+									/>
+									<feOffset dx="2" dy="2" />
+									<feGaussianBlur stdDeviation="2" />
+									<feColorMatrix
+										type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0.764706 0 0 0 0 0.407843 0 0 0 0.4 0"
+									/>
+									<feBlend
+										mode="normal"
+										in2="BackgroundImageFix"
+										result="effect1_dropShadow"
+									/>
+									<feBlend
+										mode="normal"
+										in="SourceGraphic"
+										in2="effect1_dropShadow"
+										result="shape"
+									/>
+								</filter>
+							</defs>
+						</svg>
+						<p class="slider__item-text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+						</p>
+					</div>
+					<div class="slider__item">
+						<svg
+							class="svg-hover"
+							width="80"
+							height="88"
+							viewBox="0 0 80 88"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g filter="url(#filter0_d)">
+								<path
+									d="M64 43.5V29C64 15.7452 53.2548 5 40 5H32C18.7452 5 8 15.7452 8 29V43.5"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<path
+									d="M13 35C13 22.2975 23.2975 12 36 12C48.7025 12 59 22.2975 59 35V43C59 55.7025 48.7025 66 36 66C23.2975 66 13 55.7025 13 43V35Z"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<path
+									d="M33.5 74.5L40 74.5C53.2548 74.5 64 63.7548 64 50.5L64 40"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<rect
+									x="5"
+									y="36"
+									width="6"
+									height="14"
+									rx="3"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<rect
+									x="61"
+									y="36"
+									width="6"
+									height="14"
+									rx="3"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+							</g>
+							<defs>
+								<filter
+									id="filter0_d"
+									x="0"
+									y="0"
+									width="80"
+									height="87.5"
+									filterUnits="userSpaceOnUse"
+									color-interpolation-filters="sRGB"
+								>
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feColorMatrix
+										in="SourceAlpha"
+										type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+									/>
+									<feOffset dx="4" dy="4" />
+									<feGaussianBlur stdDeviation="4" />
+									<feColorMatrix
+										type="matrix"
+										values="0 0 0 0 0.65098 0 0 0 0 0.670588 0 0 0 0 0.741176 0 0 0 1 0"
+									/>
+									<feBlend
+										mode="normal"
+										in2="BackgroundImageFix"
+										result="effect1_dropShadow"
+									/>
+									<feBlend
+										mode="normal"
+										in="SourceGraphic"
+										in2="effect1_dropShadow"
+										result="shape"
+									/>
+								</filter>
+							</defs>
+						</svg>
+						<p class="slider__item-text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+						</p>
+					</div>
+					<div class="slider__item">
+						<svg
+							class="svg-hover"
+							width="73"
+							height="88"
+							viewBox="0 0 73 88"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g filter="url(#filter0_d)">
+								<rect
+									x="5.5"
+									y="5"
+									width="54"
+									height="70"
+									rx="3"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<path
+									d="M13.5 5H51.5V10C51.5 11.6569 50.1569 13 48.5 13H16.5C14.8431 13 13.5 11.6569 13.5 10V5Z"
+									stroke="#2E3A59"
+									stroke-width="2"
+								/>
+								<g filter="url(#filter1_d)">
+									<path
+										d="M13.5 61C13.5 59.3431 14.8431 58 16.5 58H48.5C50.1569 58 51.5 59.3431 51.5 61V63C51.5 64.6569 50.1569 66 48.5 66H16.5C14.8431 66 13.5 64.6569 13.5 63V61Z"
+										stroke="#00C368"
+										stroke-width="2"
+									/>
+								</g>
+							</g>
+							<defs>
+								<filter
+									id="filter0_d"
+									x="0.5"
+									y="0"
+									width="72"
+									height="88"
+									filterUnits="userSpaceOnUse"
+									color-interpolation-filters="sRGB"
+								>
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feColorMatrix
+										in="SourceAlpha"
+										type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+									/>
+									<feOffset dx="4" dy="4" />
+									<feGaussianBlur stdDeviation="4" />
+									<feColorMatrix
+										type="matrix"
+										values="0 0 0 0 0.65098 0 0 0 0 0.670588 0 0 0 0 0.741176 0 0 0 1 0"
+									/>
+									<feBlend
+										mode="normal"
+										in2="BackgroundImageFix"
+										result="effect1_dropShadow"
+									/>
+									<feBlend
+										mode="normal"
+										in="SourceGraphic"
+										in2="effect1_dropShadow"
+										result="shape"
+									/>
+								</filter>
+								<filter
+									id="filter1_d"
+									x="10.5"
+									y="55"
+									width="48"
+									height="18"
+									filterUnits="userSpaceOnUse"
+									color-interpolation-filters="sRGB"
+								>
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feColorMatrix
+										in="SourceAlpha"
+										type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+									/>
+									<feOffset dx="2" dy="2" />
+									<feGaussianBlur stdDeviation="2" />
+									<feColorMatrix
+										type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0.764706 0 0 0 0 0.407843 0 0 0 0.4 0"
+									/>
+									<feBlend
+										mode="normal"
+										in2="BackgroundImageFix"
+										result="effect1_dropShadow"
+									/>
+									<feBlend
+										mode="normal"
+										in="SourceGraphic"
+										in2="effect1_dropShadow"
+										result="shape"
+									/>
+								</filter>
+							</defs>
+						</svg>
+						<p class="slider__item-text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+-->
+		<section class="drop-down">
+            <div class="line"></div>
+			<div class="container">
+				<h2 class="drop-down__title">
+					Lorem ipsum, dolor sit amet consectetur elit.
+				</h2>
+				<h3 class="drop-down__subtitle">
+					Porro ab rerum omnis magnam eligendi error nobis dolore?
+				</h3>
+				<div class="drop-down__item">
+					<h3 class="drop-down__item-title">
+						Lorem ipsum, dolor sit amet adipisicing elit.
+					</h3>
+					<p class="drop-down__item-subtitle">
+						Laboriosam quas, aut consectetur animi autem aliquid consequuntur
+						suscipit exercitationem laborum cupiditate magnam eaque quae delenit
+					</p>
+				</div>
+                <div class="drop-down__item">
+					<h3 class="drop-down__item-title">
+						Lorem ipsum, dolor sit amet adipisicing elit.
+					</h3>
+					<p class="drop-down__item-subtitle">
+						Laboriosam quas, aut consectetur animi autem aliquid consequuntur
+						suscipit exercitationem laborum cupiditate magnam eaque quae delenit
+					</p>
+				</div>
+                <div class="drop-down__item active">
+					<h3 class="drop-down__item-title">
+						Lorem ipsum, dolor sit amet adipisicing elit.
+					</h3>
+					<p class="drop-down__item-subtitle">
+						Laboriosam quas, aut consectetur animi autem aliquid consequuntur
+						suscipit exercitationem laborum cupiditate magnam eaque quae delenit
+					</p>
+				</div>
+                <div class="drop-down__item">
+					<h3 class="drop-down__item-title">
+						Lorem ipsum, dolor sit amet adipisicing elit.
+					</h3>
+					<p class="drop-down__item-subtitle">
+						Laboriosam quas, aut consectetur animi autem aliquid consequuntur
+						suscipit exercitationem laborum cupiditate magnam eaque quae delenit
+					</p>
+				</div>
+                <div class="drop-down__item">
+					<h3 class="drop-down__item-title">
+						Lorem ipsum, dolor sit amet adipisicing elit.
+					</h3>
+					<p class="drop-down__item-subtitle">
+						Laboriosam quas, aut consectetur animi autem aliquid consequuntur
+						suscipit exercitationem laborum cupiditate magnam eaque quae delenit
+					</p>
+				</div>
+			</div>
+		</section>
+        <section class="feedback">
+            <div class="container">
+                <div class="line"></div>
+                <h2 class="feedback__title">
+                    Lorem ipsum, dolor sit amet consectetur  elit.
+                </h2>
+                <div class="feedback__card active">
+                    <img src="./img/photo.png" alt="photo" class="feedback__photo">
+                    <div class="feedback__content">
+                        <div class="feedback__text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur
+                            animi  autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae deleniti, iste nisi
+                            expedita, provident excepturi officia!
+                            Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore?
+                        </div>
+                        <div class="feedback__name">
+                            Jane Doe
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback__card">
+                    <img src="./img/photo.png" alt="photo" class="feedback__photo">
+                    <div class="feedback__content">
+                        <div class="feedback__text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur
+                            animi  autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae deleniti, iste nisi
+                            expedita, provident excepturi officia!
+                            Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore?
+                        </div>
+                        <div class="feedback__name">
+                            Jane Doe
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback__card reverse">
+                    <img src="./img/photo.png" alt="photo" class="feedback__photo">
+                    <div class="feedback__content">
+                        <div class="feedback__text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur
+                            animi  autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae deleniti, iste nisi
+                            expedita, provident excepturi officia!
+                            Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore?
+                        </div>
+                        <div class="feedback__name">
+                            Jane Doe
+                        </div>
+                    </div>
+                </div>
             </div>
-            <nav class="nav">
-                <button class="nav__item">NavItem1</button>
-                <button class="nav__item">NavItem2</button>
-                <button class="nav__item nav__item_active">NavItem3</button>
-            </nav>
-            <button class="header__button">button</button>
-        </div>
-    </header>
-    
-    <main class="main">
-        
-        <div class="contaner">
-            <div class="main__pic"></div>
-            
-            <h2 class="main__title">Lorem ipsum, dolor sit amet consectetur</h2>
-            <div class="slider">
-                <div class="slider__item">
-                    <svg class="svg-hover" width="80" height="88" viewBox="0 0 80 88" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d)">
-                        <path d="M64 43.5V29C64 15.7452 53.2548 5 40 5H32C18.7452 5 8 15.7452 8 29V43.5" stroke="#2E3A59" stroke-width="2"/>
-                        <path d="M13 35C13 22.2975 23.2975 12 36 12C48.7025 12 59 22.2975 59 35V43C59 55.7025 48.7025 66 36 66C23.2975 66 13 55.7025 13 43V35Z" stroke="#2E3A59" stroke-width="2"/>
-                        <path d="M33.5 74.5L40 74.5C53.2548 74.5 64 63.7548 64 50.5L64 40" stroke="#2E3A59" stroke-width="2"/>
-                        <rect x="5" y="36" width="6" height="14" rx="3" stroke="#2E3A59" stroke-width="2"/>
-                        <rect x="61" y="36" width="6" height="14" rx="3" stroke="#2E3A59" stroke-width="2"/>
-                        </g>
-                        <defs>
-                        <!-- <filter id="filter0_d" x="0" y="0" width="80" height="87.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                        <feOffset dx="4" dy="4"/>
-                        <feGaussianBlur stdDeviation="4"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0.65098 0 0 0 0 0.670588 0 0 0 0 0.741176 0 0 0 1 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                        </filter> -->
-                        </defs>
-                    </svg>
-                    <p class="slider__item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="slider__item">
-                    <svg class="svg-hover" width="81" height="96" viewBox="0 0 81 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d)">
-                        <circle cx="31.69" cy="73.4106" r="7" transform="rotate(-15 31.69 73.4106)" stroke="#2E3A59" stroke-width="2"/>
-                        <rect x="30.9965" y="32.1853" width="30" height="30" transform="rotate(-15 30.9965 32.1853)" stroke="#2E3A59" stroke-width="2"/>
-                        <g filter="url(#filter1_d)">
-                        <rect x="43.1052" y="31.0114" width="6" height="8" transform="rotate(-15 43.1052 31.0114)" stroke="#00C368" stroke-width="2"/>
-                        </g>
-                        </g>
-                        <defs>
-                        <!-- <filter id="filter0_d" x="17.8921" y="19.196" width="63.0715" height="76.0125" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                        <feOffset dx="4" dy="4"/>
-                        <feGaussianBlur stdDeviation="4"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0.65098 0 0 0 0 0.670588 0 0 0 0 0.741176 0 0 0 1 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                        </filter> -->
-                        <!-- <filter id="filter1_d" x="39.8805" y="26.2337" width="18.3156" height="19.7298" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                        <feOffset dx="2" dy="2"/>
-                        <feGaussianBlur stdDeviation="2"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.764706 0 0 0 0 0.407843 0 0 0 0.4 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                        </filter> -->
-                        </defs>
-                    </svg>
-                    <p class="slider__item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="slider__item">
-                    <svg class="svg-hover" width="113" height="103" viewBox="0 0 113 103" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d)">
-                            <path d="M19.1607 65.5423C13.3029 59.6844 13.3028 50.1869 19.1607 44.3291L44.7138 18.7759C50.5717 12.9181 60.0692 12.9181 65.927 18.7759L70.3751 23.224C76.7391 29.588 76.1152 40.1228 69.2298 46.0046C65.3795 49.2937 61.381 52.849 58.1861 56.0092C54.446 59.7086 50.2117 64.4448 46.3971 68.8965C40.5133 75.7631 29.9905 76.372 23.6345 70.016L19.1607 65.5423Z" stroke="#2E3A59" stroke-width="2"/>
-                            <path d="M17.1362 63.2873C11.7662 57.9174 11.2645 49.4046 16.1269 43.6212C20.5091 38.409 25.7879 32.3754 30.3021 27.9102C34.2798 23.9757 39.5538 19.3897 44.2348 15.4712C50.0198 10.6285 58.5205 11.1389 63.8823 16.5008L64.2826 16.9011C70.6467 23.2652 70.0228 33.7999 63.1374 39.6817C59.2871 42.9708 55.2886 46.5262 52.0937 49.6863C48.3536 53.3858 44.1192 58.1219 40.3046 62.5737C34.4209 69.4402 23.898 70.0492 17.542 63.6932L17.1362 63.2873Z" stroke="#2E3A59" stroke-width="2"/>
-                            <rect x="38.1523" y="30.7675" width="15.6653" height="15.6653" rx="7.83265" transform="rotate(-45 38.1523 30.7675)" stroke="#2E3A59" stroke-width="2"/>
-                            <rect x="73.5" y="67.9999" width="26" height="22" rx="1" stroke="#2E3A59" stroke-width="2"/>
-                            <path d="M75.5 44.9994C82.5 46.9994 86.5 49.9999 86.5002 60.999" stroke="#2E3A59" stroke-width="2"/>
-                        </g>
-                        <defs>
-                            <filter id="filter0_d" x="0.615234" y="6.10352e-05" width="111.885" height="103" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                                <feOffset dx="4" dy="4"/>
-                                <feGaussianBlur stdDeviation="4"/>
-                                <feColorMatrix type="matrix" values="0 0 0 0 0.65098 0 0 0 0 0.670588 0 0 0 0 0.741176 0 0 0 1 0"/>
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                            </filter>
-                        </defs>
-                    </svg>
-                    <p class="slider__item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="slider__item">
-                    <svg class="svg-hover" width="81" height="96" viewBox="0 0 81 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d)">
-                        <circle cx="31.69" cy="73.4106" r="7" transform="rotate(-15 31.69 73.4106)" stroke="#2E3A59" stroke-width="2"/>
-                        <rect x="30.9965" y="32.1853" width="30" height="30" transform="rotate(-15 30.9965 32.1853)" stroke="#2E3A59" stroke-width="2"/>
-                        <g filter="url(#filter1_d)">
-                        <rect x="43.1052" y="31.0114" width="6" height="8" transform="rotate(-15 43.1052 31.0114)" stroke="#00C368" stroke-width="2"/>
-                        </g>
-                        </g>
-                        <defs>
-                        <filter id="filter0_d" x="17.8921" y="19.196" width="63.0715" height="76.0125" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                        <feOffset dx="4" dy="4"/>
-                        <feGaussianBlur stdDeviation="4"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0.65098 0 0 0 0 0.670588 0 0 0 0 0.741176 0 0 0 1 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                        </filter>
-                        <filter id="filter1_d" x="39.8805" y="26.2337" width="18.3156" height="19.7298" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                        <feOffset dx="2" dy="2"/>
-                        <feGaussianBlur stdDeviation="2"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.764706 0 0 0 0 0.407843 0 0 0 0.4 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                        </filter>
-                        </defs>
-                    </svg>
-                    <p class="slider__item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="slider__item">
-                    <svg class="svg-hover" width="80" height="88" viewBox="0 0 80 88" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d)">
-                        <path d="M64 43.5V29C64 15.7452 53.2548 5 40 5H32C18.7452 5 8 15.7452 8 29V43.5" stroke="#2E3A59" stroke-width="2"/>
-                        <path d="M13 35C13 22.2975 23.2975 12 36 12C48.7025 12 59 22.2975 59 35V43C59 55.7025 48.7025 66 36 66C23.2975 66 13 55.7025 13 43V35Z" stroke="#2E3A59" stroke-width="2"/>
-                        <path d="M33.5 74.5L40 74.5C53.2548 74.5 64 63.7548 64 50.5L64 40" stroke="#2E3A59" stroke-width="2"/>
-                        <rect x="5" y="36" width="6" height="14" rx="3" stroke="#2E3A59" stroke-width="2"/>
-                        <rect x="61" y="36" width="6" height="14" rx="3" stroke="#2E3A59" stroke-width="2"/>
-                        </g>
-                        <defs>
-                        <filter id="filter0_d" x="0" y="0" width="80" height="87.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                        <feOffset dx="4" dy="4"/>
-                        <feGaussianBlur stdDeviation="4"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0.65098 0 0 0 0 0.670588 0 0 0 0 0.741176 0 0 0 1 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                        </filter>
-                        </defs>
-                    </svg>
-                    <p class="slider__item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="slider__item">
-                    <svg class="svg-hover" width="73" height="88" viewBox="0 0 73 88" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d)">
-                        <rect x="5.5" y="5" width="54" height="70" rx="3" stroke="#2E3A59" stroke-width="2"/>
-                        <path d="M13.5 5H51.5V10C51.5 11.6569 50.1569 13 48.5 13H16.5C14.8431 13 13.5 11.6569 13.5 10V5Z" stroke="#2E3A59" stroke-width="2"/>
-                        <g filter="url(#filter1_d)">
-                        <path d="M13.5 61C13.5 59.3431 14.8431 58 16.5 58H48.5C50.1569 58 51.5 59.3431 51.5 61V63C51.5 64.6569 50.1569 66 48.5 66H16.5C14.8431 66 13.5 64.6569 13.5 63V61Z" stroke="#00C368" stroke-width="2"/>
-                        </g>
-                        </g>
-                        <defs>
-                        <filter id="filter0_d" x="0.5" y="0" width="72" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                        <feOffset dx="4" dy="4"/>
-                        <feGaussianBlur stdDeviation="4"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0.65098 0 0 0 0 0.670588 0 0 0 0 0.741176 0 0 0 1 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                        </filter>
-                        <filter id="filter1_d" x="10.5" y="55" width="48" height="18" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                        <feOffset dx="2" dy="2"/>
-                        <feGaussianBlur stdDeviation="2"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.764706 0 0 0 0 0.407843 0 0 0 0.4 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                        </filter>
-                        </defs>
-                    </svg>
-                    <p class="slider__item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <script type="text/javascript" src="./libs/jquery/jquery-3.6.0.min.js"></script>
-    <script src="./libs/slick/slick.js"></script>
-    <script src="main.js"></script>
-</body>
-
+        </section>
+		<script
+			type="text/javascript"
+			src="./libs/jquery/jquery-3.6.0.min.js"
+		></script>
+		<script src="./libs/slick/slick.js"></script>
+		<script src="main.js"></script>
+	</body>
 </html>
