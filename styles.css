@@ -494,6 +494,25 @@ li.slick-active:last-child {
 	padding: 8px;
 	border-bottom: 2px solid #a6abbd;
 	border-left: 2px solid #a6abbd;
+	transition: transform .3s ease;
+}
+
+.drop-down__item:not(.active):hover > .drop-down__item-title::after {
+	animation: move 1s ease infinite;
+}
+
+@keyframes move {
+	0% {
+		transform: translateY(-50%) rotate(-45deg);
+	}
+
+	50% {
+		transform: translateY(0%) rotate(-45deg);
+	}
+
+	0% {
+		transform: translateY(-50%) rotate(-45deg);
+	}
 }
 
 .drop-down__subtitle {
