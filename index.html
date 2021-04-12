@@ -8,7 +8,6 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
 			rel="stylesheet"
 		/>
-		<!-- <link rel="stylesheet" href="./fonts/fonts.css"> -->
 		<link rel="stylesheet" href="styles.css" />
 		<link rel="stylesheet" href="./libs/slick/slick.css" />
 		<title>Document</title>
@@ -22,9 +21,9 @@
 					<h1 class="logo__text">PRODUCT 24</h1>
 				</div>
 				<nav class="nav">
-					<button class="nav__item">NavItem1</button>
-					<button class="nav__item">NavItem2</button>
-					<button class="nav__item nav__item_active">NavItem3</button>
+					<a href="#" class="nav__item">NavItem1</a>
+					<a href="#" class="nav__item">NavItem2</a>
+					<a href="#" class="nav__item nav__item_active">NavItem3</a>
 				</nav>
 				<button class="header__button">button</button>
 			</div>
@@ -33,7 +32,6 @@
 		<main class="main">
 			<div class="contaner">
 				<div class="main__pic"></div>
-
 				<h2 class="main__title">Lorem ipsum, dolor sit amet consectetur</h2>
 				<div class="slider">
 					<div class="slider__item">
@@ -80,8 +78,7 @@
 									stroke-width="2"
 								/>
 							</g>
-							<defs>
-							</defs>
+							<defs></defs>
 						</svg>
 						<p class="slider__item-text">
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -521,10 +518,11 @@
 				</div>
 			</div>
 		</main>
-		
+
 		<section class="drop-down">
-            <div class="line"></div>
+			<!-- <div class="line"></div> -->
 			<div class="container">
+				<div class="line"></div>
 				<h2 class="drop-down__title">
 					Lorem ipsum, dolor sit amet consectetur elit.
 				</h2>
@@ -532,6 +530,9 @@
 					Porro ab rerum omnis magnam eligendi error nobis dolore?
 				</h3>
 				<div class="drop-down__item">
+					<div class="drop-down__ico">
+						<img src="./img/drop-down-ico-1.svg" alt="icon" />
+					</div>
 					<h3 class="drop-down__item-title">
 						Lorem ipsum, dolor sit amet adipisicing elit.
 					</h3>
@@ -540,7 +541,10 @@
 						suscipit exercitationem laborum cupiditate magnam eaque quae delenit
 					</p>
 				</div>
-                <div class="drop-down__item">
+				<div class="drop-down__item">
+					<div class="drop-down__ico">
+						<img src="./img/drop-down-ico-2.svg" alt="icon" />
+					</div>
 					<h3 class="drop-down__item-title">
 						Lorem ipsum, dolor sit amet adipisicing elit.
 					</h3>
@@ -549,7 +553,10 @@
 						suscipit exercitationem laborum cupiditate magnam eaque quae delenit
 					</p>
 				</div>
-                <div class="drop-down__item active">
+				<div class="drop-down__item active">
+					<div class="drop-down__ico">
+						<img src="./img/drop-down-ico-3.svg" alt="icon" />
+					</div>
 					<h3 class="drop-down__item-title">
 						Lorem ipsum, dolor sit amet adipisicing elit.
 					</h3>
@@ -558,7 +565,10 @@
 						suscipit exercitationem laborum cupiditate magnam eaque quae delenit
 					</p>
 				</div>
-                <div class="drop-down__item">
+				<div class="drop-down__item">
+					<div class="drop-down__ico">
+						<img src="./img/drop-down-ico-4.svg" alt="icon" />
+					</div>
 					<h3 class="drop-down__item-title">
 						Lorem ipsum, dolor sit amet adipisicing elit.
 					</h3>
@@ -567,7 +577,10 @@
 						suscipit exercitationem laborum cupiditate magnam eaque quae delenit
 					</p>
 				</div>
-                <div class="drop-down__item">
+				<div class="drop-down__item">
+					<div class="drop-down__ico">
+						<img src="./img/drop-down-ico-5.svg" alt="icon" />
+					</div>
 					<h3 class="drop-down__item-title">
 						Lorem ipsum, dolor sit amet adipisicing elit.
 					</h3>
@@ -578,56 +591,59 @@
 				</div>
 			</div>
 		</section>
-        <section class="feedback">
-            <div class="container">
-                <div class="line"></div>
-                <h2 class="feedback__title">
-                    Lorem ipsum, dolor sit amet consectetur  elit.
-                </h2>
-                <div class="feedback__card active">
-                    <img src="./img/photo.png" alt="photo" class="feedback__photo">
-                    <div class="feedback__content">
-                        <div class="feedback__text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur
-                            animi  autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae deleniti, iste nisi
-                            expedita, provident excepturi officia!
-                            Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore?
-                        </div>
-                        <div class="feedback__name">
-                            Jane Doe
-                        </div>
-                    </div>
-                </div>
-                <div class="feedback__card">
-                    <img src="./img/photo.png" alt="photo" class="feedback__photo">
-                    <div class="feedback__content">
-                        <div class="feedback__text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur
-                            animi  autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae deleniti, iste nisi
-                            expedita, provident excepturi officia!
-                            Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore?
-                        </div>
-                        <div class="feedback__name">
-                            Jane Doe
-                        </div>
-                    </div>
-                </div>
-                <div class="feedback__card reverse">
-                    <img src="./img/photo.png" alt="photo" class="feedback__photo">
-                    <div class="feedback__content">
-                        <div class="feedback__text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur
-                            animi  autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae deleniti, iste nisi
-                            expedita, provident excepturi officia!
-                            Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore?
-                        </div>
-                        <div class="feedback__name">
-                            Jane Doe
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<section class="feedback">
+			<div class="container">
+				<div class="line"></div>
+				<h2 class="feedback__title">
+					Lorem ipsum, dolor sit amet consectetur elit.
+				</h2>
+				<div class="feedback__card active">
+					<img src="./img/photo.png" alt="photo" class="feedback__photo" />
+					<div class="feedback__content">
+						<div class="feedback__text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Laboriosam quas, aut consectetur animi autem aliquid consequuntur
+							suscipit exercitationem laborum cupiditate magnam eaque quae
+							deleniti, iste nisi expedita, provident excepturi officia! Porro
+							ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum
+							omnis magnam eligendi error nobis dolore? Porro ab rerum omnis
+							magnam eligendi error nobis dolore?
+						</div>
+						<div class="feedback__name">Jane Doe</div>
+					</div>
+				</div>
+				<div class="feedback__card">
+					<img src="./img/photo.png" alt="photo" class="feedback__photo" />
+					<div class="feedback__content">
+						<div class="feedback__text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Laboriosam quas, aut consectetur animi autem aliquid consequuntur
+							suscipit exercitationem laborum cupiditate magnam eaque quae
+							deleniti, iste nisi expedita, provident excepturi officia! Porro
+							ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum
+							omnis magnam eligendi error nobis dolore? Porro ab rerum omnis
+							magnam eligendi error nobis dolore?
+						</div>
+						<div class="feedback__name">Jane Doe</div>
+					</div>
+				</div>
+				<div class="feedback__card reverse">
+					<img src="./img/photo.png" alt="photo" class="feedback__photo" />
+					<div class="feedback__content">
+						<div class="feedback__text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Laboriosam quas, aut consectetur animi autem aliquid consequuntur
+							suscipit exercitationem laborum cupiditate magnam eaque quae
+							deleniti, iste nisi expedita, provident excepturi officia! Porro
+							ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum
+							omnis magnam eligendi error nobis dolore? Porro ab rerum omnis
+							magnam eligendi error nobis dolore?
+						</div>
+						<div class="feedback__name">Jane Doe</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<script
 			type="text/javascript"
 			src="./libs/jquery/jquery-3.6.0.min.js"
